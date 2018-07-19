@@ -2,9 +2,11 @@ package com.neusoft.po;
 //课程
 public class Lesson {
 	private int lid;				//课程id
-	private int lname;				//课程名
+
+	private String lname;			//课程名
+
 	private String imgUrl;			//图片url
-	private float lprice;			//课程价格
+	private double lprice;			//课程价格
 	private String ldesc;			//课程富文本
 	private String category;		//课程类别
 	private String pubTime;			//发布时间
@@ -17,10 +19,11 @@ public class Lesson {
 	public void setLid(int lid) {
 		this.lid = lid;
 	}
-	public int getLname() {
+
+	public String getLname() {
 		return lname;
 	}
-	public void setLname(int lname) {
+	public void setLname(String lname) {
 		this.lname = lname;
 	}
 	public String getImgUrl() {
@@ -29,10 +32,10 @@ public class Lesson {
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
 	}
-	public float getLprice() {
+	public double getLprice() {
 		return lprice;
 	}
-	public void setLprice(float lprice) {
+	public void setLprice(double lprice) {
 		this.lprice = lprice;
 	}
 	public String getLdesc() {
